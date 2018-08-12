@@ -13,7 +13,7 @@ export ALPHA_ADVANTAGE_API_KEY=??
 ```
 
 ## Step 3
-Run `main.go`` or compile it!
+Run `main.go` or compile it!
 
 
 ```
