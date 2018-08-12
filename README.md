@@ -10,3 +10,5 @@ AMZN         1888.5100    1886.3000    2.21
 MSFT         109.4400     109.0000     0.44
 NFLX         346.7700     345.8700     0.9
 ```
+
+![Screenshot!](static/screenshot.png?raw=true "Screenshot")
