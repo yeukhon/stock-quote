@@ -2,9 +2,6 @@ package main
 
 import (
   "encoding/json"
-  "fmt"
-  "io/ioutil"
-  "log"
   "net/http"
   "os"
   "time"
@@ -22,13 +19,23 @@ func getQuote(url string, target interface{}) error {
         return err
     }
     defer r.Body.Close()
-
     return json.NewDecoder(r.Body).Decode(target)
 }
 
 func main() {
-  fmt.Println("hi")
   stock_quote := new(lib.StockQuoteResponse)
-  getQuote(QUOTE_URL, stock_quote)
-  fmt.Println(stock_quote.Metadata)
+  r := getQuote(QUOTE_URL, stock_quote)
+  if r != nil {
+    panic(r)
+  }
+
+  // Instance access to specific stock instead of reading from a list,
+  // and print as we go.
+  stocks := make(map[string]lib.StockQuote)
+
+  lib.PrintHeader()
+  for _, v := range stock_quote.BatchQuote {
+    stocks[v.Symbol] = v
+    lib.PrintToTerminal(v.Symbol, v)
+  }
 }
