@@ -1,6 +1,21 @@
 # stock-quote
 Get update about my stocks. An adventure to learn Go programming!
 
+
+## Step 1
+Get your free API from Alpha Advantage: https://www.alphavantage.co/support/#api-key.
+
+## Step 2
+Export your API key.
+
+```
+export ALPHA_ADVANTAGE_API_KEY=??
+```
+
+## Step 3
+Run `main.go`` or compile it!
+
+
 ```
 John-Wong:stock-quote jwong$ go run main.go
              open         market       diff
