@@ -3,7 +3,7 @@ Get update about my stocks. An adventure to learn Go programming!
 
 
 ## Step 1
-Get your free API from Alpha Advantage: https://www.alphavantage.co/support/#api-key.
+Get your free API from Alpha Advantage: https://www.alphavantage.co/support/#api-key (note there is a 5-minute rate limit).
 
 ## Step 2
 Export your API key.
