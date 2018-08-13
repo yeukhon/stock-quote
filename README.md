@@ -19,11 +19,11 @@ Run `main.go` or compile it!
 ```
 John-Wong:stock-quote jwong$ go run main.go
              open         market       diff
-FB           182.0900     180.2600     1.83
-IQ           28.6000      29.4000      -0.8
-AMZN         1888.5100    1886.3000    2.21
-MSFT         109.4400     109.0000     0.44
-NFLX         346.7700     345.8700     0.9
+MSFT         109.2600     108.6100     -0.65
+AMZN         1898.5000    1907.1800    8.68
+NFLX         339.5300     343.8100     4.28
+FB           180.0000     181.0000     1
+IQ           29.3900      28.6300      -0.76
 ```
 
 ![Screenshot!](static/screenshot.png?raw=true "Screenshot")

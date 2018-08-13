@@ -50,7 +50,7 @@ func PrintToTerminal(symbol string, stock StockQuote) {
   fmt.Printf("%-13s", stock.Price)
 
   // Round up the difference
-  _diff := StrToNum(stock.Open) - StrToNum(stock.Price)
+  _diff := StrToNum(stock.Price) - StrToNum(stock.Open)
   diff := Round(_diff, 0.005)
 
   // Colorized difference
